@@ -75,3 +75,18 @@ Fixtures are initial data for your database which can be used with <i>manage.py 
 
 ## 4. Explain Migration in Python Django.
 
+## 5. Difference Between a Project & App?
+
+## 6. How do we initialize a project & an app?
+
+## 7. What does the settings.py file do?
+
+## 8. How do you set up a database connection?
+
+## 9. Django Templating Language
+
+## 10. What are CSRF Tokens?
+
+## 11. What are Django Signals?
+
+## 12. How can we set restrictions on views?
