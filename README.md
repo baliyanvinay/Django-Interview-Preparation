@@ -90,3 +90,13 @@ Fixtures are initial data for your database which can be used with <i>manage.py 
 ## 11. What are Django Signals?
 
 ## 12. How can we set restrictions on views?
+
+## 13. Explain transaction in Django
+
+## 14. What is the use case of REST API? Why should we use it?
+
+## 15. Explain Serialization. 
+
+## 16. Explain all the files that are created within a new project.
+
+## 17. Explain Django Architecture. 
