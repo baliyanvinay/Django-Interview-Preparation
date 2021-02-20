@@ -100,3 +100,5 @@ Fixtures are initial data for your database which can be used with <i>manage.py 
 ## 16. Explain all the files that are created within a new project.
 
 ## 17. Explain Django Architecture. 
+
+## 18. Explain Sessions in Django
