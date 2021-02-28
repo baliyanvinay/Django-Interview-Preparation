@@ -85,6 +85,7 @@ Fixtures are initial data for your database which can be used with <i>manage.py 
 - Migrations can also be named ```$ python manage.py makemigrations --name changed_my_model your_app_label ```
 
 ## 5. Difference Between a Project & App?
+A project is whole idea behind your application and an app is the sub-module of that idea. Example- Users as a micro-service project with profile app for profile related management, authentication app and so on. In a general way, a project could be the whole website and an app could be functionalities it offers, like request app, result app, frontend app and so on. 
 
 ## 6. How do we initialize a project & an app?
 
