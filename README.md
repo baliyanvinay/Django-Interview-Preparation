@@ -74,6 +74,15 @@ It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project se
 Fixtures are initial data for your database which can be used with <i>manage.py loaddata</i> command. Django will look for a fixtures folder in your app or the list of directories provided in the FIXTURE_DIRS in settings, and use its content instead.
 
 ## 4. Explain Migration in Python Django.
+- Model with a dependency is created first, say Teacher has foreign key to Person model, the Person model is created first
+- Each app has migrations stored in migration file with class representation. Django.db.migrations.Migration is the migration class
+- Each migration class lists dependencies(a list of mig this depends on) and operations(what was changed in models)
+- These operations are then used to create the SQL which then makes the changes
+- It is possible to write migration files manually without running the 'makemigrations' command
+- Initial migrations are marked with an initial = True class attribute on the migration class
+- If you have manually changed your db, Django won't be able to migrate changes | errors
+- Migrations can be reverted by passing the migration number ``` $ python manage.py migrate app 002 ``` 
+- Migrations can also be named ```$ python manage.py makemigrations --name changed_my_model your_app_label ```
 
 ## 5. Difference Between a Project & App?
 
@@ -102,3 +111,8 @@ Fixtures are initial data for your database which can be used with <i>manage.py 
 ## 17. Explain Django Architecture. 
 
 ## 18. Explain Sessions in Django
+
+## 19. Explain Squashing Migration in Django.
+Squashing is the act of reducing an existing set of many migrations down to one (or sometimes a few) migrations which still represent the same changes. Django takes all the operations from the migrations, puts them in sequence and optimizes them. 
+- Create model and Delete model --> No operation
+- You can name squashed migrations ``` python manage.py squashmigrations myapp --squashed-name squashed_migration_01 ```
