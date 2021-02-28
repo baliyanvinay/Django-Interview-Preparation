@@ -88,6 +88,16 @@ Fixtures are initial data for your database which can be used with <i>manage.py 
 A project is whole idea behind your application and an app is the sub-module of that idea. Example- Users as a micro-service project with profile app for profile related management, authentication app and so on. In a general way, a project could be the whole website and an app could be functionalities it offers, like request app, result app, frontend app and so on. 
 
 ## 6. How do we initialize a project & an app?
+#### Project
+- Create the project ``` $ django-admin.py startproject project_name ```
+- Update your project settings in ./settings.py like installed_apps, middlewares, db, project variables & so on.
+- Validate installment | use Django dev test server
+- Version control project, creates requirements.txt
+
+#### App
+- Create the app ``` $ python manage.py startapp app_name ```
+- Add app into project settings.py installed_apps
+- Make migrations & migrate models
 
 ## 7. What does the settings.py file do?
 
