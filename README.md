@@ -116,3 +116,6 @@ Fixtures are initial data for your database which can be used with <i>manage.py 
 Squashing is the act of reducing an existing set of many migrations down to one (or sometimes a few) migrations which still represent the same changes. Django takes all the operations from the migrations, puts them in sequence and optimizes them. 
 - Create model and Delete model --> No operation
 - You can name squashed migrations ``` python manage.py squashmigrations myapp --squashed-name squashed_migration_01 ```
+- All migration files must be deleted after a squashed migration(leaving the squashed one)
+- Update dependencies of deleted migrations to squashed migration. 
+- Remove 'replaces' from squashed migration file. 'replaces' is what makes it a squashed migration
