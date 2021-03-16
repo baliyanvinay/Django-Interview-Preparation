@@ -84,6 +84,11 @@ Fixtures are initial data for your database which can be used with <i>manage.py 
 - Migrations can be reverted by passing the migration number ``` $ python manage.py migrate app 002 ``` 
 - Migrations can also be named ```$ python manage.py makemigrations --name changed_my_model your_app_label ```
 
+## 4a. How does Django knows which migration to apply?
+Django creates a 'django_migrations' table in db with fields <ID | App | Name | Applied> when you apply any migration the first time. A new row is inserted for each migration that is applied or faked. 
+
+## 4b. Explain fake migration in Django
+
 ## 5. Difference Between a Project & App?
 A project is whole idea behind your application and an app is the sub-module of that idea. Example- Users as a micro-service project with profile app for profile related management, authentication app and so on. In a general way, a project could be the whole website and an app could be functionalities it offers, like request app, result app, frontend app and so on. 
 
@@ -130,3 +135,18 @@ Squashing is the act of reducing an existing set of many migrations down to one 
 - All migration files must be deleted after a squashed migration(leaving the squashed one)
 - Update dependencies of deleted migrations to squashed migration. 
 - Remove 'replaces' from squashed migration file. 'replaces' is what makes it a squashed migration
+
+## 20. Difference between class based views and function based views.
+When to use which one?
+
+## 21. Explain the request flow in Django. 
+
+## 22. Explain middlewares in Django. 
+Triggers and all
+
+## 23. Explain mixins. What makes mixins different.
+
+## 24. How to migrate from one database to another?
+Use of two setting files.
+
+## 25. Explain bulk_create on post in DRF.
