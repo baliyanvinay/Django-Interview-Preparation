@@ -150,3 +150,6 @@ Triggers and all
 Use of two setting files.
 
 ## 25. Explain bulk_create on post in DRF.
+## 26. Difference between a POST and PUT request.
+## 27. How would you create models from legacy DB?
+## 28. Difference between Django and Flask
