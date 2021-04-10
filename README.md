@@ -150,6 +150,24 @@ Triggers and all
 Use of two setting files.
 
 ## 25. Explain bulk_create on post in DRF.
-## 26. Difference between a POST and PUT request.
+## 26. Explain REST HTTP methods
+| Method | CRUD   | Entire Collection       | Specific Item                            |
+| :-----:|:------:| :----------------------:| :---------------------------------------:|
+| GET    | Read   | 200(OK)                 | 200(OK), 404(Not Found)                  |
+| POST   | Create | 201(Created)            | 404(Not found), 409(Conflict)            |
+| PUT    | Update | 405(Method Not Allowed) | 200(OK), 204(No Content), 404(Not Found) |
+| PATCH  | Modify | 405(Method Not Allowed) | 200(OK), 204(No Content), 404(Not Found) |
+| DELETE | Delete | 405(Method Not Allowed) | 200(OK), 404 (Not Found)                 |
+
+### Status Codes
+- Informational 1XX
+- Successful 2XX
+- Redirection 3XX
+- Client Error 4XX
+- Server Error 5XX
+
+### Difference between a POST and PUT request.
+Calling the same PUT request multiple times will always produce the same result. In contrast, calling a POST request repeatedly make have side effects of creating the same resource multiple times.
+
 ## 27. How would you create models from legacy DB?
 ## 28. Difference between Django and Flask
