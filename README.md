@@ -172,3 +172,4 @@ Calling the same PUT request multiple times will always produce the same result.
 ## 27. How would you create models from legacy DB?
 ## 28. Difference between Django and Flask
 ## 29. Explain Middlewares. What methods are required within a middleware?
+## 30. Explain the request flow when a url is hit.
